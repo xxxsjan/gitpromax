@@ -1,0 +1,37 @@
+{
+  "name": "gitpromax",
+  "version": "0.0.3",
+  "description": "git增效命令行工具",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -w -c",
+    "build": "rollup -c",
+    "start:lib": "bun lib.index.js",
+    "publ": "node ./scripts/publish.js"
+  },
+  "bin": {
+    "gt": "./bin/index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "cac": "^6.7.14",
+    "glob": "^10.3.15",
+    "minimist": "^1.2.8",
+    "ora": "^8.0.1",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
+    "rollup": "^4.17.2",
+    "semver": "^7.6.2",
+    "simple-git": "^3.24.0"
+  }
+}
